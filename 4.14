@@ -1,0 +1,32 @@
+#include <iostream>
+#include <ctime>
+
+int main()
+{
+    int a, b, c, min, max;
+    std::cin >> a >> b >> c;
+    if (a > c && a > b)
+    {
+        max = a;
+    }
+        else if (b > c)
+        {
+            max = b;
+        }
+        else
+        {
+            max = c;
+        }
+    
+    if (a < c && a < b)
+    {
+        min = a;
+    }
+    else if (b < c)
+        min = b;
+    else 
+        min = c;
+    
+    std::cout << "MIN = " << min << " " << "MAX = " << max;
+    return 0;
+}
