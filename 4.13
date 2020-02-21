@@ -1,0 +1,35 @@
+#include <iostream>
+#include <ctime>
+
+int main()
+{
+    int a, b, c, middle;
+    std::cin >> a >> b >> c;
+    if (a > c && a > b)
+    {
+        if (c > b)
+        {
+        middle = c;
+        }
+        else
+        {
+        middle = b;
+        }
+    }
+    if (b > a && b > c)
+    {
+        if (a > c)
+        middle = a;
+        else
+        middle = c;
+    }
+    if (c > a && c > b)
+    {
+        if (a > b)
+        middle = a;
+        else
+        middle = b;
+    }
+    std::cout << middle;
+    return 0;
+}
