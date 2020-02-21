@@ -1,0 +1,15 @@
+#include <iostream>
+#include <ctime>
+
+int main()
+{
+    int a, b;
+    std::cin >> a >> b;
+    if (a != b)
+    {
+        std::cout << "A = " << a + b << " " << "B = " << a + b;
+    }
+    else
+        std::cout << "A = " << 0 << " " << "B = " << 0;
+    return 0;
+}
