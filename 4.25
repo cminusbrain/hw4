@@ -1,0 +1,17 @@
+#include <iostream>
+#include <ctime>
+#include <cmath>
+
+int main()
+{
+    int x, f;
+    std::cin >> x;
+    if (x < -2 || x > 2)
+    {
+        f = 2 * x;
+    }
+    else
+        f = -3 * x;
+    std::cout << "f(x) = " << f;
+    return 0;
+}
