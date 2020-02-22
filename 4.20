@@ -1,0 +1,18 @@
+#include <iostream>
+#include <ctime>
+#include <cmath>
+
+int main()
+{
+    int a, b, c, r1, r2;
+    std::cin >> a >> b >> c;
+    r1 = abs(a - b);
+    r2 = abs(a - c);
+    if (r1 < r2)
+    {
+        std::cout << "Ближе к a точка b, расстояние - " << r1;
+    }
+    else 
+        std::cout << "Ближе к a точка c, расстояние - " << r2;
+    return 0;
+}
