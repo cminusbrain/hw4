@@ -1,0 +1,22 @@
+#include <iostream>
+#include <ctime>
+#include <cmath>
+
+int main()
+{
+    double x;
+    std::cin >> x;
+    if (x <= 0)
+    {
+        std::cout << "f(x) = " << (-1 * x);
+    }
+    if (x > 0 && x < 2)
+    {
+        std::cout << "f(x) = " << pow(x, 2);
+    }
+    if (x >= 2)
+    {
+        std::cout << "f(x) = " << 4;
+    }
+    return 0;
+}
